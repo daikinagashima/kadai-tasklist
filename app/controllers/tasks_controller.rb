@@ -4,15 +4,15 @@ class TasksController < ApplicationController
   end
 
   def show
-      @tasklist = Task.find(params[:id])
+      @task = Task.find(params[:id])
   end
 
   def new
-      @tasklist = Task.new
+      @task = Task.new
   end
 
   def edit
-      @tasklist = Task.find(params[:id])
+      @task = Task.find(params[:id])
   end
 
 end
